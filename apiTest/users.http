@@ -1,0 +1,23 @@
+GET {{host}}/users/profile/youpp@126.com
+
+
+###
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "name": "newUser",
+  "email": "youpp@1262.com",
+  "password": "123456",
+  "loginFrom": {}
+}
+
+
+###
+POST {{host}}/users/82c359ee-bab1-4b2b-91e7-351e1448d8ce
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "TomUser999"
+}
